@@ -1,5 +1,5 @@
 # web.github.io
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -129,6 +129,7 @@ DOCTYPE html>
             <h2>Contact Us</h2>
             <p>If you have any questions or would like to reach out to us, please use the contact information below:</p>
             <p>Phone: +254796447965</p>
+            <p>Email: <a href="mailto:rumsfelddonald1@gmail.com">rumsfelddonald1@gmail.com</a></p>
             <p>Twitter: <a href="https://twitter.com/factsaroundglobe" target="_blank">@factsaroundglobe</a></p>
             <form id="contact-form">
                 <label for="name">Name:</label>
@@ -138,4 +139,38 @@ DOCTYPE html>
                 <input type="email" id="email" name="email" required>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></texta…
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Facts Around Globe</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                if (validateEmail(email)) {
+                    alert(`Thank you, ${name}! Your message has been sent.`);
+                    form.reset();
+                } else {
+                    alert('Please enter a valid email address.');
+                }
+            });
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>
