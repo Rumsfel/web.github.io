@@ -13,12 +13,13 @@
             box-sizing: border-box;
         }
 
-        /* Typography */
+        /* Colors and typography */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            padding: 20px;
+            padding: 0;
             background-color: #f9f9f9;
+            color: #333;
         }
 
         /* Layout */
@@ -26,20 +27,31 @@
             margin-bottom: 20px;
         }
 
+        header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
             gap: 15px;
             justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
-        }
-
-        h1, h2 {
-            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
         }
 
         main {
@@ -49,6 +61,12 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #about {
+            background: url('about-image.jpg') no-repeat center center/cover;
+            padding: 40px 20px;
+            color: white;
         }
 
         form label {
@@ -108,18 +126,20 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Facts Around Globe</h1>
+        <p>Discover interesting facts about our world</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="home">
-            <h1>Facts Around Globe</h1>
-            <p>Welcome to Facts Around Globe. Discover interesting facts about our world.</p>
+            <h1>Welcome to Facts Around Globe</h1>
+            <p>This is an example of a webpage following best practices in coding.</p>
         </section>
         <section id="about">
             <h2>About Us</h2>
