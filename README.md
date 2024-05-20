@@ -63,6 +63,21 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
         #about {
             background: url('about-image.jpg') no-repeat center center/cover;
             padding: 40px 20px;
@@ -132,20 +147,39 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#geography">Geography</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#nature">Nature</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section id="home">
-            <h1>Welcome to Facts Around Globe</h1>
+        <section id="home" class="section">
+            <h2>Welcome to Facts Around Globe</h2>
             <p>This is an example of a webpage following best practices in coding.</p>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Facts Around Globe is dedicated to sharing fascinating facts about different places, cultures, and events around the world. Our mission is to educate and entertain our audience with well-researched and engaging content.</p>
+        <section id="geography" class="section">
+            <h2>Geographical Wonders</h2>
+            <p>Explore natural landmarks like the Grand Canyon, Mount Everest, and the Great Barrier Reef.</p>
+            <p>Discover unusual geographical formations such as the Giant's Causeway, Salar de Uyuni, and Zhangjiajie National Forest Park.</p>
         </section>
-        <section id="contact">
+        <section id="culture" class="section">
+            <h2>Cultural Insights</h2>
+            <p>Learn about unique traditions, festivals, and customs from different cultures around the world.</p>
+            <p>Read about traditional clothing and fashion from various cultures, and food and cuisine from different regions.</p>
+        </section>
+        <section id="history" class="section">
+            <h2>Historical Events</h2>
+            <p>Discover major historical events that shaped the world, such as the fall of the Berlin Wall, the Renaissance, and the Industrial Revolution.</p>
+            <p>Explore ancient civilizations like the Egyptians, the Mayans, and the Romans.</p>
+        </section>
+        <section id="nature" class="section">
+            <h2>Flora and Fauna</h2>
+            <p>Read about unique and endangered species, biodiversity hotspots like the Amazon Rainforest and the Galápagos Islands.</p>
+            <p>Discover interesting animal behaviors and adaptations.</p>
+        </section>
+        <section id="contact" class="section">
             <h2>Contact Us</h2>
             <p>If you have any questions or would like to reach out to us, please use the contact information below:</p>
             <p>Phone: +254796447965</p>
